@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <title>POO-Ejercicio1</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <h2>Persona</h2>
+        <input
+          type="text"
+          id="nombre-persona"
+          name="nombre"
+          placeholder="Escribe tu nombre"
+        />
+        <input
+          type="number"
+          id="edad-persona"
+          min="1"
+          name="edad"
+          placeholder="Ingresa tu edad"
+        />
+        <select name="sexo" id="sexo-persona">
+          <option value="0">Sexo:</option>
+          <option value="Femenino">Femenino</option>
+          <option value="Masculino">Masculino</option>
+          <option value="Por definir">Por definir</option>
+        </select>
+        <button id="boton-saludar">Saludar</button>
+      </form>
+      <div class="resultado" id="resultado-persona"></div>
+      <form action="">
+        <h2>Estudiante</h2>
+        <input
+          type="text"
+          id="nombre-estudiante"
+          name="nombre"
+          placeholder="Escribe tu nombre"
+        />
+        <input
+          type="number"
+          id="edad-estudiante"
+          min="1"
+          name="edad"
+          placeholder="Ingresa tu edad"
+        />
+        <select name="sexo" id="sexo-estudiante">
+          <option value="0">Sexo:</option>
+          <option value="Femenino">Femenino</option>
+          <option value="Masculino">Masculino</option>
+          <option value="Por definir">Por definir</option>
+        </select>
+        <input
+          type="text"
+          placeholder="Ingresa la carrera:"
+          id="carrera-estudiante"
+        />
+        <button id="boton-estudiar">Estudiar</button>
+      </form>
+      <div class="resultado" id="resultado-estudiante"></div>
+    </div>
+  </body>
+</html>
