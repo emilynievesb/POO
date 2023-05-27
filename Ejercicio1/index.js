@@ -62,7 +62,6 @@ BOTON_ESTUDIAR.addEventListener("click", (e) => {
     carrera: CARRERA,
   });
   const CONTENEDOR_ESTUDIANTE = document.getElementById("resultado-estudiante");
-  console.log(estudiante1.saludar(), estudiante1.estudiar());
   CONTENEDOR_ESTUDIANTE.innerHTML = `<h2>${estudiante1.saludar()}</h2><h2>${estudiante1.estudiar()}</h2><h2>${Estudiante.esMayorDeEdad(
     EDAD
   )}</h2>`;
