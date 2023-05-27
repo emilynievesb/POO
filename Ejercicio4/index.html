@@ -4,67 +4,98 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+      defer
+    ></script>
     <script src="index.js" defer></script>
     <title>POO-Ejercicio4</title>
   </head>
   <body>
-    <div class="container">
-      <form action="">
-        <h2>Vehículo</h2>
-        <input
-          type="text"
-          id="marca-carro"
-          name="marca"
-          placeholder="Escribe la marca"
-        />
-        <input
-          type="text"
-          id="modelo-carro"
-          name="modelo"
-          placeholder="Escribe el modelo"
-        />
-        <input
-          type="number"
-          id="velocidad-carro"
-          min="1"
-          name="velocidad"
-          placeholder="Ingresa la velocidad"
-        />
-        <button id="boton-vehiculo">Acelerar</button>
-      </form>
-      <div class="resultado" id="resultado-vehiculo"></div>
-      <form action="">
-        <h2>Coche</h2>
-        <input
-          type="text"
-          id="marca-coche"
-          name="marca"
-          placeholder="Escribe la marca"
-        />
-        <input
-          type="text"
-          id="modelo-coche"
-          name="modelo"
-          placeholder="Escribe el modelo"
-        />
-        <input
-          type="number"
-          id="velocidad-coche"
-          min="1"
-          name="velocidad"
-          placeholder="Ingresa la velocidad"
-        />
-        <input
-          type="number"
-          id="combustible-coche"
-          min="1"
-          name="combustible"
-          placeholder="Ingresa la combustible"
-        />
-        <button id="boton-coche">Acelerar</button>
-      </form>
-      <div class="resultado" id="resultado-coche"></div>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <form action="" class="col-12 col-sm-12 col-md-6 col-lg-5">
+          <h2 class="mb-4">Vehículo</h2>
+          <input
+            type="text"
+            id="marca-carro"
+            name="marca"
+            placeholder="Escribe la marca"
+            class="mb-4 col-10 col-md-5"
+          />
+          <input
+            type="text"
+            id="modelo-carro"
+            name="modelo"
+            placeholder="Escribe el modelo"
+            class="mb-4 col-10 col-md-5"
+          />
+          <input
+            type="number"
+            id="velocidad-carro"
+            min="1"
+            name="velocidad"
+            placeholder="Ingresa la velocidad"
+            class="mb-4 col-10 col-md-5"
+          />
+          <button class="rounded" id="boton-vehiculo">Acelerar</button>
+        </form>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-5 mb-5">
+          <div class="text-center" id="resultado-vehiculo"></div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <form action="" class="col-12 col-sm-12 col-md-6 col-lg-5">
+          <h2 class="mb-4">Coche</h2>
+          <input
+            type="text"
+            id="marca-coche"
+            name="marca"
+            placeholder="Escribe la marca"
+            class="mb-4 col-10 col-md-5"
+          />
+          <input
+            type="text"
+            id="modelo-coche"
+            name="modelo"
+            placeholder="Escribe el modelo"
+            class="mb-4 col-10 col-md-5"
+          />
+          <input
+            type="number"
+            id="velocidad-coche"
+            min="1"
+            name="velocidad"
+            placeholder="Ingresa la velocidad"
+            class="mb-4 col-10 col-md-5"
+          />
+          <input
+            type="number"
+            id="combustible-coche"
+            min="1"
+            name="combustible"
+            placeholder="Ingresa la combustible"
+            class="mb-4 col-10 col-md-5"
+          />
+          <button class="rounded" id="boton-coche">Acelerar</button>
+        </form>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-5 mb-5">
+          <div class="text-center" id="resultado-coche"></div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

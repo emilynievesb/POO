@@ -7,6 +7,9 @@ class Vehiculo {
     this.marca = marca;
     this.velocidad = velocidad;
   }
+  static convertirKmHEnMph(km) {
+    return km / 1.60934;
+  }
   acelerar() {
     return `La velocidad es de ${(this.velocidad += 10)}`;
   }
@@ -23,7 +26,9 @@ BOTON_VEHICULO.addEventListener("click", (e) => {
     velocidad: Number(VELOCIDAD),
   });
   const CONTENEDOR = document.getElementById("resultado-vehiculo");
-  CONTENEDOR.innerHTML = `<h2>${vehiculo1.acelerar()}</h2>`;
+  CONTENEDOR.innerHTML = `<h2>${vehiculo1.acelerar()}</h2><h2>La velocidad en Mph es de ${Vehiculo.convertirKmHEnMph(
+    Number(VELOCIDAD)
+  )} mph</h2>`;
 });
 class Coche extends Vehiculo {
   combustible;
@@ -48,9 +53,8 @@ BOTON_COCHE.addEventListener("click", (e) => {
     velocidad: Number(VELOCIDAD),
     combustible: COMBUSTIBLE,
   });
-  console.log(coche1);
-  console.log();
-
   const CONTENEDOR = document.getElementById("resultado-coche");
-  CONTENEDOR.innerHTML = `<h2>${coche1.acelerar()}</h2>`;
+  CONTENEDOR.innerHTML = `<h2>${coche1.acelerar()}</h2><h2>La velocidad en Mph es de ${Coche.convertirKmHEnMph(
+    Number(VELOCIDAD)
+  )} mph</h2>`;
 });

@@ -5,15 +5,8 @@
   border: 0;
   font-family: "Titan One", cursive;
 }
-.container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
+
 form {
-  width: 20%;
   padding: 3rem;
   display: flex;
   align-items: center;
@@ -28,15 +21,9 @@ select {
   padding: 0.6rem;
   border-radius: 1rem;
   font-size: 1rem;
-  margin: 1rem;
 }
 button {
   background-color: violet;
   padding: 1rem;
   border-radius: 1rem;
-}
-.resultado {
-  width: 20%;
-  text-align: center;
-  background-color: red;
 }
